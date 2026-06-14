@@ -315,13 +315,3 @@ Documents include:
 - Annual Highlights ("L'Essentiel") (2025, 2026)
 - Social Report (2024)
 
-
-
-$body = @{ question = "What was BNP Paribas net banking income in 2025?" } | ConvertTo-Json -Compress
-Invoke-RestMethod -Uri "https://enterprise-agent-fsdcqpdzgq-ew.a.run.app/ask" -Method Post -ContentType "application/json; charset=utf-8" -Body ([System.Text.Encoding]::UTF8.GetBytes($body))
-
-
-
-
-$body = @{ question = "What was the total dividends table value for division XYZ in 1999?" } | ConvertTo-Json -Compress
-Invoke-RestMethod -Uri "https://enterprise-agent-fsdcqpdzgq-ew.a.run.app/ask" -Method Post -ContentType "application/json; charset=utf-8" -Body ([System.Text.Encoding]::UTF8.GetBytes($body))
