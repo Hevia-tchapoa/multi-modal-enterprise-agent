@@ -9,3 +9,4 @@ qdrant_storage/
 .DS_Store
 .vscode/
 .idea/
+video_script.md

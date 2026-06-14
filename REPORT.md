@@ -4,7 +4,7 @@
 MUTHUKUMAR	Harinesh
 TCHAPOA	Hevia
 **Date:** June 14, 2026
-**GitHub repository:** [repo URL]
+**GitHub repository:** https://github.com/Hevia-tchapoa/multi-modal-enterprise-agent.git
 **Demo:** Live Cloud Run endpoint — `https://enterprise-agent-fsdcqpdzgq-ew.a.run.app`
 
 ---

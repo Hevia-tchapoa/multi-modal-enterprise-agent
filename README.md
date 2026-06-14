@@ -309,12 +309,13 @@ Documents include:
 - Annual Highlights ("L'Essentiel") (2025, 2026)
 - Social Report (2024)
 
-> Note: the full 2025 Universal Registration Document (~930 pages) was
-> excluded from the final dataset for local processing time reasons. See
-> `REPORT.md` for details.
 
----
 
-## 📄 License
+$body = @{ question = "What was BNP Paribas net banking income in 2025?" } | ConvertTo-Json -Compress
+Invoke-RestMethod -Uri "https://enterprise-agent-fsdcqpdzgq-ew.a.run.app/ask" -Method Post -ContentType "application/json; charset=utf-8" -Body ([System.Text.Encoding]::UTF8.GetBytes($body))
 
-This project was built as an educational capstone project.
+
+
+
+$body = @{ question = "What was the total dividends table value for division XYZ in 1999?" } | ConvertTo-Json -Compress
+Invoke-RestMethod -Uri "https://enterprise-agent-fsdcqpdzgq-ew.a.run.app/ask" -Method Post -ContentType "application/json; charset=utf-8" -Body ([System.Text.Encoding]::UTF8.GetBytes($body))
