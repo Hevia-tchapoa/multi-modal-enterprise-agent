@@ -55,21 +55,27 @@ data/raw/*.pdf  ──▶  ETL Pipeline (extraction, cleaning,
 ```
 multi-modal-enterprise-agent/
 ├── data/
-│   ├── raw/                  # Downloaded PDF reports + metadata.json
+│   ├── raw/                  # Downloaded PDF reports and metadata files
+│   │   ├── metadata.json
+│   │   └── metadata_test.json
 │   └── finances.db           # SQLite database (generated)
+├── qdrant_storage/           # Local Qdrant persistence files
 ├── src/
-│   ├── scrape_bnp_reports.py # Downloads BNP Paribas financial reports
-│   ├── etl_pipeline.py       # Cleaning, semantic chunking, embeddings, Qdrant insertion
-│   ├── create_sqlite_db.py   # Creates finances.db with structured financial data
+│   ├── agent.py              # LangGraph ReAct agent + FinOps cost tracking
+│   ├── create_sqlite_db.py   # Builds the SQLite financial database
+│   ├── diagnose.py           # Debugging / diagnostics utilities
+│   ├── main.py               # FastAPI app exposing the agent (POST /ask)
+│   ├── make_test_metadata.py # Generates a smaller metadata subset for testing
+│   ├── scrapper_bnp_reports.py # Downloads BNP Paribas reports
 │   ├── tools.py              # LangGraph tools: execute_sql, search_vector_db
-│   ├── agent.py              # LangGraph ReAct agent + FinOps cost calculation
-│   └── main.py               # FastAPI app exposing the agent (POST /ask)
-├── docker-compose.yml        # Local Qdrant instance
+│   └── vector_etl.py         # ETL / embedding / Qdrant insertion flow
+├── Videos/                   # Video assets or related outputs
+├── docker-compose.yml        # Local Qdrant service definition
 ├── Dockerfile                # Container for the agent + FastAPI
 ├── requirements.txt          # Python dependencies
-├── .env.example               # Environment variables template
+├── .env                      # Environment variables template
 ├── .gitignore
-├── REPORT.md                  # Architecture report, RAGAS eval, cost analysis
+├── REPORT.md                 # Architecture report, RAGAS eval, cost analysis
 └── README.md
 ```
 

@@ -219,38 +219,7 @@ the free tier (2 million requests/month, 360,000 GiB-seconds/month).
 
 ---
 
-## 5. Limitations and Future Improvements
-
-- **Dataset scope**: the full 2025 Universal Registration Document
-  (~930 pages) was excluded from the vector database for local
-  processing time reasons. The remaining 11 documents (Integrated
-  Reports, URD amendments, quarterly statements, Social Report) still
-  provide substantial coverage.
-- **Incomplete multi-row SQL synthesis (Q4)**: the agent can omit rows
-  when summarizing multi-row SQL results. *Planned fix*: strengthen the
-  system prompt to explicitly require reporting every row returned by
-  `execute_sql`.
-- **Silent entity mapping (Q5)**: user terminology that doesn't exactly
-  match categorical database values (e.g., "Retail" vs. "CPBS") is
-  silently mapped by the LLM. *Planned fix*: inject the list of valid
-  `division` values (and other categorical fields) into the SQL schema
-  description, and instruct the agent to flag approximate matches
-  explicitly.
-- **GraphRAG (Neo4j)**: not implemented in this submission due to time
-  constraints. As a future "Extra Mile" addition, entity/relationship
-  extraction from the BNP Paribas reports (e.g., subsidiaries,
-  executives, business lines) could enable multi-hop Cypher queries
-  alongside the existing vector search.
-- **Cloud deployment**: not activated for this submission to avoid GCP
-  costs ahead of the deadline. `deploy.sh` is ready for future use.
-- **Gemini free-tier quota**: the 20 requests/day limit per API
-  key/project constrained the number of test iterations possible in a
-  single session. For continued development, either multiple API keys
-  (rotated across projects) or a paid tier would remove this constraint.
-
----
-
-## 6. Running Instructions
+## 5. Running Instructions
 
 See `README.md` at the repository root for full setup instructions
 (Docker, environment variables, and commands to run each phase of the
