@@ -1,0 +1,90 @@
+[
+  {
+    "filename": "bnp_urd_amendement1_2025.pdf",
+    "source_url": "https://invest.bnpparibas/document/1er-amendement-au-document-d-enregistrement-universel-et-rapport-financier-annuel-2025",
+    "company_name": "BNP Paribas",
+    "document_type": "URD_Amendement",
+    "document_year": 2025,
+    "quarter": null
+  },
+  {
+    "filename": "bnp_rapport_integre_2025.pdf",
+    "source_url": "https://invest.bnpparibas/document/rapport-integre-2025",
+    "company_name": "BNP Paribas",
+    "document_type": "Rapport_Integre",
+    "document_year": 2025,
+    "quarter": null
+  },
+  {
+    "filename": "bnp_rapport_integre_2024.pdf",
+    "source_url": "https://invest.bnpparibas/document/rapport-integre-2024",
+    "company_name": "BNP Paribas",
+    "document_type": "Rapport_Integre",
+    "document_year": 2024,
+    "quarter": null
+  },
+  {
+    "filename": "bnp_urd_amendement1_2024.pdf",
+    "source_url": "https://invest.bnpparibas/document/1er-amendement-au-document-denregistrement-universel-et-rapport-financier-annuel-2024",
+    "company_name": "BNP Paribas",
+    "document_type": "URD_Amendement",
+    "document_year": 2024,
+    "quarter": null
+  },
+  {
+    "filename": "bnp_urd_amendement2_2024.pdf",
+    "source_url": "https://invest.bnpparibas/document/2eme-amendement-au-document-denregistrement-universel-et-rapport-financier-annuel-2024",
+    "company_name": "BNP Paribas",
+    "document_type": "URD_Amendement",
+    "document_year": 2024,
+    "quarter": null
+  },
+  {
+    "filename": "bnp_urd_amendement3_2024.pdf",
+    "source_url": "https://invest.bnpparibas/document/3eme-amendement-au-document-denregistrement-universel-et-rapport-financier-annuel-2024",
+    "company_name": "BNP Paribas",
+    "document_type": "URD_Amendement",
+    "document_year": 2024,
+    "quarter": null
+  },
+  {
+    "filename": "bnp_etats_financiers_q4_2025.pdf",
+    "source_url": "https://invest.bnpparibas/document/4t25-efna",
+    "company_name": "BNP Paribas",
+    "document_type": "Etats_Financiers",
+    "document_year": 2025,
+    "quarter": "Q4"
+  },
+  {
+    "filename": "bnp_etats_financiers_q2_2025.pdf",
+    "source_url": "https://invest.bnpparibas/document/2t25-efna",
+    "company_name": "BNP Paribas",
+    "document_type": "Etats_Financiers",
+    "document_year": 2025,
+    "quarter": "Q2"
+  },
+  {
+    "filename": "bnp_essentiel_2025.pdf",
+    "source_url": "https://invest.bnpparibas/document/lessentiel-2025",
+    "company_name": "BNP Paribas",
+    "document_type": "Essentiel",
+    "document_year": 2025,
+    "quarter": null
+  },
+  {
+    "filename": "bnp_essentiel_2026.pdf",
+    "source_url": "https://invest.bnpparibas/document/l-essentiel-2026",
+    "company_name": "BNP Paribas",
+    "document_type": "Essentiel",
+    "document_year": 2026,
+    "quarter": null
+  },
+  {
+    "filename": "bnp_bilan_social_2024.pdf",
+    "source_url": "https://invest.bnpparibas/document/bilan-social-2024",
+    "company_name": "BNP Paribas",
+    "document_type": "Bilan_Social",
+    "document_year": 2024,
+    "quarter": null
+  }
+]
